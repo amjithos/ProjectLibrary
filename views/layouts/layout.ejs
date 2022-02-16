@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    <link href="https://unpkg.com/filepond@^4/dist/filepond.css" rel="stylesheet">
+    <link href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css" rel="stylesheet">
+    <script defer src="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.js"></script>
+    <script defer src="https://unpkg.com/filepond-plugin-file-encode/dist/filepond-plugin-file-encode.js"></script>
+    <script defer src="https://unpkg.com/filepond-plugin-image-resize/dist/filepond-plugin-image-resize.js"></script>
+    <script defer src="https://unpkg.com/filepond@^4/dist/filepond.js"></script>
+    <script defer src="/javascripts/fileUpload.js"></script>
+  
+      <!-- CSS Plugins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crete+Round&amp;family=Work+Sans:wght@500;600&amp;display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/plugins/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/plugins/tabler-icons/tabler-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+    <title>MyLibrary</title>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <%- include('../partials/header.ejs') %>
+        <%- include('../partials/errorMessage.ejs') %>
+        <%- body %>
+    </div>
+
+    <footer>
+        <div class="container">
+          <div class="section">
+            <div class="row justify-content-center align-items-center">
+              <div class="col-xl-6 col-lg-8 col-md-10">
+                <!-- newsletter block -->
+                <div class="newsletter-block">
+                  <h2 class="section-title text-center mb-4">Get latest posts delivered right to your inbox</h2>
+                  <form action="#!" method="post" novalidate>
+                    <div class="input-group flex-column flex-sm-row flex-nowrap flex-sm-nowrap">
+                      <input type="email" name="email" class="form-control required email w-auto text-center text-sm-start" placeholder="Your email address" aria-label="Subscription" required>
+                      <div class="input-group-append d-flex d-sm-inline-block mt-2 mt-sm-0 ms-0 w-auto">
+                        <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="input-group-text w-100 justify-content-center" aria-label="Subscription Button"><i class="ti ti-user-plus me-2"></i> Join today</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <!-- newsletter block -->
+              </div>
+            </div>
+          </div>
+          <div class="pb-5">
+            <div class="row g-2 g-lg-4 align-items-center">
+              <div class="col-lg-6 text-center text-lg-start">
+                <a href="https://www.linkedin.com/in/amjith-os/" target="blank">
+                <p class="mb-0 copyright-text content">&copy;2022 Amjith OS. All rights reserved.</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </footer>
+
+    <!-- JS Plugins -->
+    <script src="/plugins/jquery/jquery.min.js"></script>
+    <script src="/plugins/bootstrap/bootstrap.min.js"></script>
+    <script src="/plugins/lightense/lightense.min.js"></script>
+
+    <!-- Main Script -->
+    <script src="/assets/js/script.js"></script>
+
+</body>
+
+</html>
