@@ -12,12 +12,11 @@
             </div>
         </div>
     </div>
-  </section>
+</section>
 
 <section>
     <div class="container">
 
-        <h2>Edit Book</h2>
         <form action="/books/<%= book.id %>?_method=PUT" method="POST">
             <%- include('_form_field') %>
                 <button class="btn btn-danger mt-2" href="/books">Cancel</button>
@@ -26,3 +25,5 @@
 
     </div>
 </section>
+
+<hr>

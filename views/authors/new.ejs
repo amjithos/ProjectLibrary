@@ -16,11 +16,16 @@
 
 <section>
     <div class="container">
-        <h3>New Author</h3>
-        <form action="/authors" method="post">
-            <%- include('_form_field') %>
-                <button class="btn btn-danger mt-2" href="/authors">Cancel</button>
-                <button class="btn btn-success mt-2" type="submit">Create</button>
-        </form>
+  
+      <form class="row gx-3 gy-2 align-items-center d-flex justify-content-center" action="/authors" method="post">
+        <%- include('_form_field') %>
+
+        <div class="col-auto mb-4">
+          <button class="btn btn-danger" href="/authors">Cancel</button>
+          <button class="btn btn-success" type="submit">Create</button>
+        </div>
+  
+      </form>
     </div>
+
 </section>

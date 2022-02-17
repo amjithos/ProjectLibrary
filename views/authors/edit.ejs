@@ -16,13 +16,16 @@
 
 <section>
     <div class="container">
-
-        <h2>Edit Author</h2>
-        <form action="/authors/<%= author.id %>?_method=PUT" method="POST">
-            <%- include('_form_field') %>
-                <button class="btn btn-danger mt-2" href="/authors/<%= author.id %>">Cancel</button>
-                <button class="btn btn-success mt-2" type="submit">Update</button>
-        </form>
-
+  
+      <form class="row gx-3 gy-2 align-items-center d-flex justify-content-center" action="/authors/<%= author.id %>?_method=PUT" method="POST">
+        <%- include('_form_field') %>
+  
+        <div class="col-auto mb-4">
+          <button href="/authors/<%= author.id %>" class="btn btn-danger">Cancel</button>
+          <button type="submit" class="btn btn-success">Update</button>
+        </div>
+  
+      </form>
     </div>
+
 </section>

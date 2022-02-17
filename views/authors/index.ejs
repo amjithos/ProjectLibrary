@@ -15,17 +15,29 @@
 </section>
 
 <section>
-    <div>
-        <h3>Search Authors</h3>
-        <form action="/authors" method="get">
-            <input class="form-control" placeholder="Enter Name" type="text" name="name"
-                value="<%= searchOptions.name %>">
-            <button class="btn btn-primary mt-2" type="submit">Search</button>
-        </form>
+    <div class="container">
+  
+      <h2 class="h3 mb-4 text-center">Search Authors</h2>
+  
+      <form class="row gx-3 gy-2 align-items-center d-flex justify-content-center" action="/authors" method="get">
+  
+        <div class="col-sm-5 mb-4">
+          <input class="form-control" placeholder="Enter Name of Author" type="text" name="name"
+          value="<%= searchOptions.name %>">
+        </div>
+  
+        <div class="col-auto mb-4">
+          <button type="submit" class="btn btn-success">Search <i class="ti ti-search"></i></button>
+        </div>
+  
+      </form>
     </div>
+
 </section>
 
-<section class="section-sm pt-0 mt-3">
+<hr>
+
+<section class="section-sm pt-0 mt-4">
     <div class="container">
         <div class="row">
             <div class="col-lg-10 mx-auto">
@@ -41,14 +53,14 @@
                                 </h4>
                                 <p class="mb-0"><span class="fw-bold text-black">04</span> Published posts</p>
                             </a>
-                            <div class="d-flex justify-content-center">
-                                <a href="/authors/<%= author.id %>/edit"><i
-                                        class="ri-edit-2-line ri-2x authors-icon"></i></a>
+                            <div class="d-flex justify-content-center mt-2">
+                                <a href="/authors/<%= author.id %>/edit">
+                                <button class="myown-button_edit">Edit</button>
+                                </a>
                                 <%- include('../partials/deleteForm', {url: `/authors/${author.id}`}) %>
                             </div>
                         </div>
-                        <% }) %>
-
+                    <% }) %>
                 </div>
             </div>
         </div>
