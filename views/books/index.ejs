@@ -64,12 +64,7 @@
               <ul class="card-meta list-inline mb-3">
                 <li class="list-inline-item mt-2">
                   <i class="ti ti-calendar-event"></i>
-                  <span>05 Dec, 2021</span>
-                </li>
-                <li class="list-inline-item mt-2">—</li>
-                <li class="list-inline-item mt-2">
-                  <i class="ti ti-clock"></i>
-                  <span>02 min read</span>
+                  <span><%= book.publishDate.toDateString() %></span>
                 </li>
               </ul>
               <a class="d-block" href="/books/<%= book.id %>" title="The AGI hype train is running out of steam">
@@ -81,16 +76,7 @@
                 <%= book.description %>
               </p>
             </div>
-            <div class="card-footer border-top-0 bg-transparent p-0">
-              <ul class="card-meta list-inline">
-                <li class="list-inline-item mt-2">
-                  <a href="/books/<%= book.id %>" class="card-meta-author" title="Read all posts by - Thomas Macaulay">
-                    <img class="w-auto" src="/assets/images/author/thomas-macaulay.jpg" alt="Thomas Macaulay" width="26"
-                      height="26"> by <span>hh</span>
-                  </a>
-                </li>
-              </ul>
-            </div>
+            
           </article>
         </div>
         <% }) %>
