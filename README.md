@@ -1,6 +1,6 @@
 # project LIBRARY
 
-<h1 align="center"> Mybrary <img width="43" src="https://img.icons8.com/nolan/50/books.png"/></h1>
+<h1 align="center"> project LIBRARY <img width="43" src="https://img.icons8.com/nolan/50/books.png"/></h1>
 <p align="center"><em>
 📰 It is an Open Source Library where you can <b>add author</b> <b>edit or delete author</b> <b>add books</b> <b>edit or delete books</b> of your choice .</em></p><br>
 
