@@ -732,7 +732,19 @@ button.input-group-text:hover {
 footer .icon-box a,
 header .dropdown-item,
 header .nav-item .nav-link {
-    border-radius: 4px!important
+    border-radius: 5px!important
+}
+
+.imgggg{
+    border-radius: 100px;
+}
+
+.imggg{
+    border-radius: 100px;
+}
+
+.imggg_g{
+    border-radius: 100%;
 }
 
 .text-primary {

@@ -1,12 +1,12 @@
 
 <section>
     <div class="row g-3">
-            <div class="col-sm-5">
+            <div class="col-sm-6">
                 <label>Title</label>
                 <input class="form-control" type="text" name="title" value="<%= book.title %>">
             </div>
 
-            <div class="col-sm">
+            <div class="col-sm-6">
                 <label>Author</label>
                 <select class="form-select form-control" name="author">
                     <% authors.forEach(author=> { %>
@@ -33,7 +33,7 @@
 
         </div>
 
-        <div class="row">
+        <div class="row mt-4">
             <div class="col-sm-8">
                 <label class="form-label">Description</label>
                 <textarea class="form-control" rows="10" style="height: 91%;" name="description"><%= book.description %> </textarea>

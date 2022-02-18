@@ -20,10 +20,10 @@
             <div class="col-lg-10">
                 <div class="row g-4 g-lg-5 text-center text-lg-start justify-content-center justify-content-lg-start">
                     <div class="col-lg-3 col-md-4 col-sm-5 col-6">
-                        <img class="img-fluid rounded" src="/assets/images/author/thomas-macaulay.jpg"
-                            alt="Thomas Macaulay" width="250" height="250">
+                        <img class="img-fluid imggg" src="/assets/images/author/nftt.gif"
+                            alt="" width="250" height="250">
 
-                            <div class="d-flex justify-content-center mt-2">
+                            <div class="d-flex justify-content-center mt-4">
                                 <a href="/authors/<%= author.id %>/edit">
                                 <button class="myown-button_edit">Edit</button>
                                 </a>
@@ -31,14 +31,12 @@
                             </div>
                     </div>
                     <div class="col-lg-9 col-md-12">
-                        <p class="mb-2"><span class="fw-bold text-black">03</span> Published posts</p>
-                        <h1 class="h3 text-dark mb-3">
+                        <h1 class="h3 text-dark mb-3 mt-5">
                             <%= author.name %>
                         </h1>
                         <div class="content">
                             <p>Thomas Macaulay is a writer based in New York City. He&rsquo;s interested in all things
                                 tech, science, and photography related, and likes to yo-yo in his free time.</p>
-                            <p>Follow him <a target="_blank" href="https://twitter.com/thomas-macaulay">on Twitter</a>.
                             </p>
                         </div>
                     </div>
@@ -58,7 +56,7 @@
                         <a class="d-block" href="/books/<%= book.id %>" title="<%= book.title %>">
                             <div class="post-image position-relative">
                                 <img class="w-100 h-auto rounded" src="<%= book.coverImagePath %>"
-                                    alt="The AGI hype train is running out of steam" width="970" height="500">
+                                    alt="" width="970" height="500">
                             </div>
                         </a>
                         <ul class="card-meta list-inline mb-3">
@@ -67,7 +65,7 @@
                                 <span><%= book.publishDate.toDateString() %></span>
                             </li>
                         </ul>
-                        <a class="d-block" href="blog-single.html" title="The AGI hype train is running out of steam">
+                        <a class="d-block" href="/books/<%= book.id %>" title="<%= book.title %>">
                             <h3 class="mb-3 post-title">
                                 <%= book.title %>
                             </h3>
