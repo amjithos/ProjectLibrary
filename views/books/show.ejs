@@ -63,11 +63,22 @@
             </li>
             <li class="list-inline-item mt-2">•</li>
           </ul>
-          <a href="/books/<%= book.id %>/edit">
-            <button class="myown-button_edit">Edit</button>
-          </a>
-          <%- include('../partials/deleteForm', {url: `/books/${book.id}`}) %>
+
         </div>
+        <div class="row mt-3 g-1">
+
+          <div class="col-sm-2">
+            <a href="/books/<%= book.id %>/edit">
+              <button class="myown-button_edit">Edit</button>
+            </a>
+          </div>
+
+          <div class="col-sm">
+            <%- include('../partials/deleteForm', {url: `/books/${book.id}`}) %>
+          </div>
+
+        </div>
+
       </div>
 
     </div>
