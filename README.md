@@ -20,6 +20,8 @@
 -  ### <img width="30" src="https://img.icons8.com/fluent/48/000000/fork.png"/> Fork or Clone the Repo and start commiting .
    ```  git clone https://github.com/amjithos/ProjectLibrary  ```  - paste this line in your terminal
 -  ### <img width="30" src="https://img.icons8.com/nolan/64/star.png"/> Star the Repo it costs you nothing :) .
+-  ### <img width="30" src="https://img.icons8.com/emoji/344/bookmark-emoji.png"/> npm run devStart for run local :) .
+-  ### <img width="30" src="https://img.icons8.com/emoji/344/candy-emoji.png"/> Create Your Own .env file :) .
 -  ### <img width="30" src="https://img.icons8.com/nolan/64/community-grants.png"/> Feel Free to Contibute .
 <hr>
 <br>
