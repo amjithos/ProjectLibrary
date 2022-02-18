@@ -4,6 +4,19 @@ h1 {
     font-size: 64px
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    width: .4rem;
+    background: white;
+}
+  
+::-webkit-scrollbar-thumb{
+    background: rgb(163, 163, 163);
+}
+
 .myown-button_edit{
     background-color: rgba(100, 198, 255, 0.884);
     color: #000000;

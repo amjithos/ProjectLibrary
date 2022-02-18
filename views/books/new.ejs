@@ -17,11 +17,14 @@
 <section>
     <div class="container">
         
-        <form action="/books" method="POST">
-            <%- include('_form_field') %>
-            <a class="btn btn-danger mt-2" href="/books">Cancel</a>
-            <button class="btn btn-success mt-2" type="submit">Create</button>
-        </form>
+            <form action="/books" method="POST" class="col-sm">
+                <%- include('_form_field') %>
 
+                <div class="col-sm-4">
+                    <a class="btn btn-danger mt-2" href="/books">Cancel</a>
+                    <button class="btn btn-success mt-2" type="submit">Create</button>
+                </div> 
+            </form>
+            
     </div>
 </section>
