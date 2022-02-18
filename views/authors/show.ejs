@@ -22,6 +22,13 @@
                     <div class="col-lg-3 col-md-4 col-sm-5 col-6">
                         <img class="img-fluid rounded" src="/assets/images/author/thomas-macaulay.jpg"
                             alt="Thomas Macaulay" width="250" height="250">
+
+                            <div class="d-flex justify-content-center mt-2">
+                                <a href="/authors/<%= author.id %>/edit">
+                                <button class="myown-button_edit">Edit</button>
+                                </a>
+                                <%- include('../partials/deleteForm', {url: `/authors/${author.id}`}) %>
+                            </div>
                     </div>
                     <div class="col-lg-9 col-md-12">
                         <p class="mb-2"><span class="fw-bold text-black">03</span> Published posts</p>

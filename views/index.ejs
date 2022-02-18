@@ -67,19 +67,19 @@
         <div class="col-lg-6">
           <article class="card post-card h-100 border-0 bg-transparent">
             <div class="card-body">
-              <a class="d-block" href="/books/<%= book.id %>" title="The AGI hype train is running out of steam">
+              <a class="d-block" href="/books/<%= book.id %>" title="">
                 <div class="post-image position-relative">
                   <img class="w-100 h-auto rounded" src="<%= book.coverImagePath %>"
-                    alt="The AGI hype train is running out of steam" width="970" height="500">
+                    alt="" width="970" height="500">
                 </div>
               </a>
               <ul class="card-meta list-inline mb-3">
                 <li class="list-inline-item mt-2">
                   <i class="ti ti-calendar-event"></i>
-                  <span>05 Dec, 2021</span>
+                  <span><%= book.publishDate.toDateString() %></span>
                 </li>
               </ul>
-              <a class="d-block" href="blog-single.html" title="The AGI hype train is running out of steam">
+              <a class="d-block" href="/books/<%= book.id %>" title="">
                 <h3 class="mb-3 post-title">
                   <%= book.title %>
                 </h3>
